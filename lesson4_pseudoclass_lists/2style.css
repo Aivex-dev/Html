@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Calibri, "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 24px;
+  color: #111111;
+}
+
+.todo {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.todo__item {
+  padding: 8px 16px;
+  font-size: 14px;
+  color: #222222;
+}
+
+.todo__item::before {
+  content: "\2610";
+  display: inline-block;
+  margin-right: 14px;
+  font-size: 16px;
+}
+
+.todo__item:nth-child(odd) {
+  background-color: #a6cbdc;
+}
+
+.todo__item:nth-child(even) {
+  background-color: #aad6e4;
+}
+
+.todo__item--done,
+.todo__item--done:nth-child(odd),
+.todo__item--done:nth-child(even) {
+  background-color: #e0e0e0;
+  text-decoration: line-through;
+}
+
+.todo__item--done::before {
+  content: "\2611";
+}
+
+.todo__close {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #a31515;
+}

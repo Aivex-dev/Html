@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Calibri, "Segoe UI", Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  max-width: 410px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.fruits {
+  margin: 0;
+  padding: 14px 16px;
+  background-color: #eda1b0;
+}
+
+.fruits__item {
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  list-style-position: inside;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #c66376;
+}
+
+.fruits__item:last-child {
+  margin-bottom: 0;
+}
+
+.fruits__text {
+  display: inline-block;
+  padding: 6px 14px;
+  background-color: #a03850;
+}
