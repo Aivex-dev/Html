@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 260px;
+  padding: 24px 20px;
+  background-color: #ffffff;
+  border: 2px solid var(--main);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.card__title {
+  margin: 0 0 16px;
+  font-size: 24px;
+  color: var(--main);
+}
+
+.card__price {
+  margin: 0 0 16px;
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--price);
+}
+
+.card__text {
+  margin: 0 0 24px;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #222222;
+  text-align: left;
+}
+
+.card__btn {
+  width: 100%;
+  padding: 12px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: var(--btn);
+  border: 3px var(--btn-border-style) var(--btn-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card__btn:hover {
+  background-color: var(--btn-hover);
+}
+
+.card--blue {
+  --main: #1f3f78;
+  --price: #a11a1a;
+  --btn: #3f82c8;
+  --btn-hover: #2a5f9e;
+  --btn-border: #6fa6dd;
+  --btn-border-style: dotted;
+}
+
+.card--blue .card__btn {
+  box-shadow: 0 4px 12px rgba(63, 130, 200, 0.5);
+}
+
+.card--green {
+  --main: #1b4d1b;
+  --price: #b5701d;
+  --btn: #1f7a2e;
+  --btn-hover: #14561f;
+  --btn-border: #3fc45c;
+  --btn-border-style: solid;
+}
+
+.card--purple {
+  --main: #4a2468;
+  --price: #b5701d;
+  --btn: #b072c4;
+  --btn-hover: #8d4fa3;
+  --btn-border: #4a2468;
+  --btn-border-style: dashed;
+}
